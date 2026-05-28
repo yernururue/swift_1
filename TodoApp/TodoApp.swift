@@ -5,7 +5,7 @@ import SwiftData
 struct TodoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
         .modelContainer(for: TodoItem.self)
     }

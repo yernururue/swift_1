@@ -12,6 +12,15 @@
 		A1000003 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000003 /* TodoRow.swift */; };
 		A1000004 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004 /* TodoItem.swift */; };
 		A1000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000005 /* Assets.xcassets */; };
+		A1000006 /* BackgroundMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006 /* BackgroundMode.swift */; };
+		A1000007 /* ImageCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000007 /* ImageCompositor.swift */; };
+		A1000008 /* ProceduralBackgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008 /* ProceduralBackgrounds.swift */; };
+		A1000009 /* BackgroundEngineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000009 /* BackgroundEngineViewModel.swift */; };
+		A100000A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000A /* MainTabView.swift */; };
+		A100000B /* BackgroundEngineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B /* BackgroundEngineView.swift */; };
+		A100000C /* AdjustmentSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000C /* AdjustmentSlider.swift */; };
+		A100000D /* StockVariantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000D /* StockVariantCard.swift */; };
+		A100000E /* LivePreviewCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000E /* LivePreviewCanvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		A2000003 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 		A2000004 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		A2000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000006 /* BackgroundMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMode.swift; sourceTree = "<group>"; };
+		A2000007 /* ImageCompositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompositor.swift; sourceTree = "<group>"; };
+		A2000008 /* ProceduralBackgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduralBackgrounds.swift; sourceTree = "<group>"; };
+		A2000009 /* BackgroundEngineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundEngineViewModel.swift; sourceTree = "<group>"; };
+		A200000A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A200000B /* BackgroundEngineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundEngineView.swift; sourceTree = "<group>"; };
+		A200000C /* AdjustmentSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustmentSlider.swift; sourceTree = "<group>"; };
+		A200000D /* StockVariantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVariantCard.swift; sourceTree = "<group>"; };
+		A200000E /* LivePreviewCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePreviewCanvas.swift; sourceTree = "<group>"; };
 		A2000010 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,6 +66,8 @@
 				A2000001 /* TodoApp.swift */,
 				A4000003 /* Views */,
 				A4000004 /* Models */,
+				A4000006 /* ViewModels */,
+				A4000007 /* Utilities */,
 				A2000005 /* Assets.xcassets */,
 			);
 			path = TodoApp;
@@ -58,6 +78,9 @@
 			children = (
 				A2000002 /* ContentView.swift */,
 				A2000003 /* TodoRow.swift */,
+				A200000A /* MainTabView.swift */,
+				A200000B /* BackgroundEngineView.swift */,
+				A4000008 /* BackgroundEngine */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -66,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				A2000004 /* TodoItem.swift */,
+				A2000006 /* BackgroundMode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -76,6 +100,33 @@
 				A2000010 /* TodoApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A4000006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2000009 /* BackgroundEngineViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4000007 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A2000007 /* ImageCompositor.swift */,
+				A2000008 /* ProceduralBackgrounds.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A4000008 /* BackgroundEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A200000C /* AdjustmentSlider.swift */,
+				A200000D /* StockVariantCard.swift */,
+				A200000E /* LivePreviewCanvas.swift */,
+			);
+			path = BackgroundEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +203,15 @@
 				A1000002 /* ContentView.swift in Sources */,
 				A1000003 /* TodoRow.swift in Sources */,
 				A1000004 /* TodoItem.swift in Sources */,
+				A1000006 /* BackgroundMode.swift in Sources */,
+				A1000007 /* ImageCompositor.swift in Sources */,
+				A1000008 /* ProceduralBackgrounds.swift in Sources */,
+				A1000009 /* BackgroundEngineViewModel.swift in Sources */,
+				A100000A /* MainTabView.swift in Sources */,
+				A100000B /* BackgroundEngineView.swift in Sources */,
+				A100000C /* AdjustmentSlider.swift in Sources */,
+				A100000D /* StockVariantCard.swift in Sources */,
+				A100000E /* LivePreviewCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
